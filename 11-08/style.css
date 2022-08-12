@@ -1,0 +1,11 @@
+.form-titulo{
+    font-size: 1rem;
+}
+.form-corpo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: fit-content;
+    font: Lora;
+    text-decoration: none;
+}
