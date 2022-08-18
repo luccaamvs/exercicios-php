@@ -1,0 +1,29 @@
+//Inicia funcao
+<?php
+$km_p_litro = 12;
+$tempo = $_GET['tempo'];
+$vel = $_GET['velocidade'];
+$dist = $tempo * $vel;
+$litros_usados = $dist / $km_p_litro;
+?>
+//Inicia HTML
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <form  method="get" action="ex03-D.php">
+      <label for="tempo">Tempo:</label>
+      <input type="text" name="tempo"><br>
+      <label for="velocidade">Velocidade:</label>
+      <input type="text" name="velocidade"><br>
+      <input type="submit" value="Calcular">
+    </form>
+    <br>
+    <h2>Distancia: <?= $dist ?? '--'; ?></h2>
+    <h2>Litros Gastos: <?= $litros_usados ?? '--'; ?></h2>
+</body>
+</html>

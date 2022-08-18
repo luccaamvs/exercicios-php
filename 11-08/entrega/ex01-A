@@ -1,0 +1,25 @@
+//Inicia funcao
+<?php
+if(isset($_GET['celcius'])){
+  $celcius = $_GET['celcius'];
+  $fah = ( 9 * $celcius + 160) / 5;
+}
+?>
+//Inicia HTML
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celsius -> Fahrenheit</title>
+</head>
+<body>
+    <form action="ex01-A.php" method="get">
+      <label for="celcius">Temperatura em Celsius</label>
+      <input type="text" name="celcius">
+      <input type="submit" value="Calcular">
+    </form>
+    <h2> <?= $celcius ?? " " ?> em Celsius é igual a <?= $fah ?? " "; ?>em Fahrenheit </h2>
+</body>
+</html>

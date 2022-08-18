@@ -1,0 +1,26 @@
+//Inicia funcao
+<?php
+  $altura = $_GET['altura'];
+  $raio = $_GET['raio'];
+  $vol = pi() * $raio ** 2 * $altura;
+?>
+//Inicia HTML
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="ex02-C.php" method="get">
+          <label for="altura">Altura em M:</label>
+          <input type="text" name="altura"><br>
+          <label for="raio">Raio em M:</label>
+          <input type="text" name="raio"><br>
+          <input type="submit" value="Calcular">
+        </form>
+
+        <h2>Volume é igual a: <?= round($vol) ?? " "; ?> metros cubics</p>
+    </body>
+</html>
