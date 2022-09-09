@@ -2,8 +2,11 @@
 
     require_once("classes/media.class.php");
 
+<<<<<<< HEAD
     error_reporting(1);
 
+=======
+>>>>>>> 7d7f8940b0608917a3753f82bef01a098fbc8864
     $oper = $_POST["oper"];
     $nota1 = $_POST["nota1"];
     $nota2 = $_POST["nota2"];
