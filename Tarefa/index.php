@@ -10,8 +10,6 @@
         $imc = $valor_imc->getImc($peso, $altura);
         $stat = $valor_imc->getStatu($imc);
     }
-
-
 ?>
 
 <!DOCTYPE html>
